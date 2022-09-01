@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/home_image"
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:menuCategory="secondary"/>
+
+        <item
+            android:icon="@drawable/view_image"
+            android:id="@+id/viewFragment"
+            android:title="View Students"
+            android:menuCategory="secondary"/>
+
+        <item
+            android:icon="@drawable/add_student"
+            android:id="@+id/addStudentFragment"
+            android:title="Add New Student"
+            android:menuCategory="secondary"/>
+
+        <item
+            android:icon="@drawable/marks"
+            android:id="@+id/marksFragment"
+            android:title="Enter Marks For Student"
+            android:menuCategory="secondary"/>
+
+        <item
+            android:icon="@drawable/help"
+            android:id="@+id/Help"
+            android:title="Help"
+            android:menuCategory="secondary"/>
+    </group>
+</menu>

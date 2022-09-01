@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.ashucode.navigationversion20.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_addStudentFragment"
+            app:destination="@id/addStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/marksFragment"
+        android:name="com.ashucode.navigationversion20.ui.marks.MarksFragment"
+        android:label="Marks of Student"
+        tools:layout="@layout/fragment_marks" >
+        <action
+            android:id="@+id/action_marksFragment_to_nav_home2"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewFragment"
+        android:name="com.ashucode.navigationversion20.ui.view.ViewFragment"
+        android:label="View Students"
+        tools:layout="@layout/fragment_view" />
+    <fragment
+        android:id="@+id/addStudentFragment"
+        android:name="com.ashucode.navigationversion20.ui.addstudent.AddStudentFragment"
+        android:label="Add New Student"
+        tools:layout="@layout/fragment_add_student" >
+        <action
+            android:id="@+id/action_addStudentFragment_to_marksFragment"
+            app:destination="@id/marksFragment" />
+    </fragment>
+</navigation>
